@@ -1,0 +1,23 @@
+{
+  "name": "npm-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npx del dist && npx eleventy && npx postcss-cli src/_assets/stylesheets/app.css -o src/_includes/app.compiled.css && npx eleventy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "autoprefixer": "^9.7.6",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0",
+    "@tailwindcss/ui": "^0.1.3",
+    "cssnano": "^4.1.10",
+    "del-cli": "^3.0.0",
+    "concurrently": "^5.1.0",
+    "luxon": "^1.23.0"
+  }
+}
